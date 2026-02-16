@@ -1,0 +1,5 @@
+{
+  "name": "CoffeeTap Dev",
+  "image": "mcr.microsoft.com/devcontainers/rust:1",
+  "postCreateCommand": "cargo build"
+}
