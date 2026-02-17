@@ -3,4 +3,20 @@ name = "coffee-tap"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "coffeetap"
+path = "src/main.rs"
+
 [dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive", "env"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde_json = "1.0"
+solana-client = "2.1"
+solana-sdk = "2.1"
+solana-transaction-status = "2.1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+
+[dev-dependencies]
+tempfile = "3.14"
